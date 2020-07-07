@@ -1,0 +1,420 @@
+/*This resets everything and specifically gets rid of the blank space between the top of the page 
+and the first element. 
+Default font is open sans */
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background-color: white;
+	color: black; 
+}
+#sidebar{
+	display: inline;
+	position: fixed;
+	z-index: 3;
+	top: 0px;
+	left:0px;
+	width: 0%;
+	height: 100%;
+	background-color: black;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+#sidebarcontent{
+	display: block;
+	color: transparent;
+	transition: 0.3s;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+#closebtn{
+	padding-top: 50px;
+	padding-left: 20px;
+	opacity: 0;
+	size: 20px;
+}
+button{
+	size: 50px;
+	display: inline-block;
+	position: relative;
+	left: 18px;
+	top: 40px;
+	color: rgb(156,156,156);
+	background-color: transparent;
+	border: none;
+	z-index: 10;
+}
+button img{
+	width: 30px;
+	height: 30px;
+}
+button:hover{
+	background-image: url('images/greenburger.png');
+}
+
+#hover{
+	size: 50px;
+	display: inline-block;
+	position: relative;
+	left: -30px;
+	top: 0px;
+	color: rgb(156,156,156);
+	background-color: transparent;
+	border: none;
+	opacity: 0;
+}
+#hover:hover{
+	opacity: 1;
+}
+
+#idle{
+	display: inline-block;
+	position: absolute;
+	left: 55px;
+	top: 40px;
+	width: 28px;
+}
+#active{
+	display: inline-block;
+	position: absolute;
+	left: 55px;
+	top: 40px;
+	width: 28px;
+	opacity: 0;
+	z-index: 10px;
+}
+#active:hover{
+	opacity: 1;
+}
+
+/*Header and nav bar*/
+header{
+	background-color: black;
+	height: 80px;
+	border-bottom: 1px solid #1f1f1f;
+	align-content: center;
+}
+header a{
+	position: absolute;
+	top:-3px;
+	left: 550px;
+/*	padding:0px;
+	margin:0px;*/
+}
+header a img{
+	height:22px;
+	padding-top: 45px;
+	display:block;
+	margin: auto;
+}
+header p{
+	position: absolute;
+	top:45px;
+	font-size: 13px;
+}
+
+h1{
+	font-size: 48px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	line-height: 52px;
+	margin-bottom: 30px;
+	font-weight: bolder;
+	letter-spacing: -1px;
+}
+h1:hover{
+	text-decoration-color: rgb(27,179,135);
+	cursor: pointer;
+}
+h2{
+	height: 15px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+h2 img{
+	height:18px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+h3:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+#login{
+	color:white;
+	right:175px;
+	font-weight: bold;
+}
+#login:hover{
+	color: rgb(27,179,135);
+	cursor:pointer;
+}
+#join{
+	color: rgb(27,179,135);
+	right:20px;
+	font-weight: bold;
+}
+#join:hover{
+	color:white;
+	cursor: pointer;
+}
+
+/*Main body*/
+#content{
+	width: 50%;
+	margin: auto;
+	color:black;
+	padding-top: 40px;
+	display: block;
+	text-align: center;
+}
+
+article img:hover{
+	cursor:pointer;
+}
+
+/*Use these classes to organize how the boxes appear*/
+.row{
+	width: 100%;
+	display: inline-block;
+	height: 250px;
+}
+
+.left {
+	float: left;
+}
+.right{
+	float:right;
+}
+
+/*style for the featured news section*/
+#featured{
+	width: 100%;
+}
+
+#featured img{
+	width: 100%;
+	cursor:pointer;
+}
+
+/*Style for the latest news section*/
+#latest h3{
+	text-align: left;
+	text-transform: capitalize;
+	line-height: 22px;
+}
+
+#latest{
+	width: 100%;
+	margin-top: 60px;
+}
+.row{
+	padding-bottom: 20px;
+}
+#latest .row article{
+	display: inline-block;
+	width: 30%
+}
+
+#latest .row article img{
+	height: 115px;
+	width:100%;
+}
+#latest h4{
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: left;
+	color: rgb(38,38,38);
+	padding-bottom: 4px;
+	padding-top: 5px;
+}
+
+#smallfeatured{
+	width: 100%;
+	height:455px;
+	padding-bottom: 0px;
+	margin-bottom: 50px;
+	margin-top: 60px;
+}
+
+#smallfeatured h3{
+	font-family: 'Bevan', cursive;
+	text-transform: capitalize;
+	font-size: 20px;
+	height: 100px;
+}
+
+#smallfeatured article{
+	width: 45%;
+	display: inline;
+	height: 400px;
+	text-align: center;
+}
+#smallfeatured article img{
+	height: 200px;
+	width: 100%;
+}
+#smallfeatured article p{
+	font-family: 'Pt Serif',serif;
+	height: 60px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+#smallfeatured article p:hover{
+	cursor: text;
+}
+
+#smallfeatured h4{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgb(52,52,52);
+}
+
+u{
+	text-decoration: none;
+}
+u:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#violator{
+	display: block;
+	width: 75%;
+	height: 180px;
+	margin: auto;
+	background-color: rgb(20,20,20);
+	align-content: center;
+	margin-bottom: 30px;
+}
+#violator p{
+	padding-bottom: 0px;
+	margin: auto;
+	color: white;
+	text-align: center;
+}
+#violator:hover{
+	cursor: default;
+}
+#violator u{
+	text-decoration: underline;
+}
+#violator u:hover{
+	color: rgb(27,179,135)
+}
+
+#itspersonal{
+	padding-top: 35px;
+	font-family: 'Bevan', cursive;
+	font-size: 35px;
+}
+#athuffpost{
+	width: 50%;
+}
+/*footer styling*/
+footer{
+	height: 280px;
+	background-color: black;
+	vertical-align: top;
+	position: relative;
+	bottom: 0;
+}
+footer:hover{
+	cursor: default;
+}
+
+#footerlinks{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin: auto;
+	width: 80%;
+}
+footer a{
+	padding-left: 50px;
+	padding-right: 30px;
+	position: relative;
+	top: 5px;
+}
+footer img{
+	width: 140px;
+	padding-top: 65px;
+	display: inline-block;
+	position: relative;
+	top:-30px;
+}
+
+footer ul{
+	display: inline-block;
+	list-style-type: none;
+	margin-top: 65px;
+	padding-bottom: 0px;
+	width: 150px;
+}
+footer ul:hover{
+	text-decoration: none;
+}
+footer ul li{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 26px;
+}
+footer ul li:hover{
+	color:rgb(27,179,135);
+	cursor: pointer;
+}
+ul.grayfooter{
+	padding-top: 0px;
+	vertical-align: top;
+
+}
+ul.grayfooter li{
+	font-weight: lighter;
+	color: rgb(168,168,168);
+
+}
+#bottomstuff{
+	position: absolute;
+	bottom: 8px;
+	left: 150px;
+	height: 39px;
+	border-top: 1px solid rgb(168,168,168);
+	z-index: 1;
+	width: 80%;
+}
+#bottomstuff:hover{
+	text-decoration: none;
+}
+#privacy{
+	height: 21px;
+	width: auto;
+	padding:0;
+	position: relative;
+	left: -8px;
+	top: 15px;
+	z-index: 2;
+}
+#copyright{
+	height: 21px;
+	width: auto;
+	padding:0;
+	position: relative;
+	left: 380px;
+	top: 15px;
+	z-index: 2;
+}
+
+#privacy:hover{
+	cursor: pointer;
+}
+#copyright:hover{
+	cursor: text;
+}

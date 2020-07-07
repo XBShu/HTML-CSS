@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+	<title>HuffPost</title>
+	<meta name="description" content="HuffPost's main page midterm">
+	<meta name="keyword" content="huffpost,news,fake">
+	<meta name="author" content="Shu Xu Bao">
+	<!--Google fonts links-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Neuton:800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bevan&display=swap" rel="stylesheet">
+	<!--stylesheet link-->
+	<link rel="stylesheet" href="styles/style.css">
+	
+	<style>
+
+		#edition{
+			position: absolute;
+			right:20px;
+			top:10px;
+			color: rgb(18,105,80);
+			padding-bottom: 1px;
+			border-bottom: 1px solid rgb(148,148,148);
+			font-size: 11px;
+			font-weight: bold;
+		}
+		#edition:hover{
+			border-bottom: 1px solid rgb(18,105,80);
+			cursor:pointer;
+		}
+		nav{
+			background-color: black;
+			color: white;
+			height:40px;
+			font-size: 12px;
+			text-align: center;
+			position:sticky;
+			top:0;
+		}
+		nav ul{
+			padding-top: 12px;
+		}
+		nav ul li{
+			margin: 0px 12px 0px 12px;
+			display: inline;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		nav ul li:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+
+
+<body id="body">
+	<!-- Logo and nav bar-->
+	<header>
+	  	<button onclick="openNav()"><img src = "images/burger.png"><img src="images/greenburger.png" id = "hover"></button> 
+	  	<img src="images/search.png" id="idle"><img src="images/greensearch.png" id="active"> 
+		<a href="https://www.huffpost.com"><img src="images/HuffPostHero.png"></a>
+		<p id="login">Log In</p>
+		<p id="join">Join HuffPost Plus</p>
+	</header>	
+	<nav>
+		<ul>
+			<li>news</li>
+			<li>coronavirus</li>
+			<li>politics</li>
+			<li>2020 elections</li>
+			<li>entertainment</li>
+			<li>life</li>
+			<li>personal</li>
+			<li>video</li>
+			<li>shopping</li>
+		</ul>
+
+		<p id="edition">U.S. Edition</p>
+	</nav>
+
+	<div id="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close.png" id="closebtn"></a>
+		<p  id="sidebarcontent">Sidebar content</p>
+	</div>
+
+	</div>
+	<!--Content-->
+	<div id="content">
+		<section id="featured">
+			<h1>amidst allegations of mischief, kitten is held</h1>
+			<img src="images/kitten1.jpeg">
+		</section>
+
+
+		<section id="latest">
+			<h2><img src="images/decor.png">Latest news<img src="images/decor.png"></h2>
+			
+			<div class="row">
+				<article class="left">
+					<img src="images/cat3.jpeg">
+					<h4>us news</h4>
+					<h3>This title is left-aligned. I am making it longer to see if it fits</h3>
+				</article>
+				<article>
+					<img src="images/cat2.jpeg">
+					<h4>cats!</h4>
+					<h3>Another interesting title for the picture above</h3>
+				</article>
+				<article class="right">
+					<img src="images/cat2.jpeg">
+					<h4>midterms</h4>
+					<h3>Cats! They're very cute</h3>
+				</article>
+			</div>
+
+			<div class="row">
+				<article class="left">
+					<img src="images/cat3.jpeg">
+					<h4>politics</h4>
+					<h3>This title is left-aligned. I am making it longer to see if it fits</h3>
+				</article>
+				<article>
+					<img src="images/cat2.jpeg">
+					<h4>world news</h4>
+					<h3>Another interesting title for the picture above</h3>
+				</article>
+				<article class="right">
+					<img src="images/cat2.jpeg">
+					<h4>life</h4>
+					<h3>Cats! They're very cute</h3>
+				</article>
+			</div>
+		</section>
+		
+		<section id="smallfeatured">
+			<h2><img src="images/decor.png">Featured<img src="images/decor.png"></h2>
+			<article class="left">
+				<img src="images/featuredsmall.jpg">
+				<h3>This image aligns to the left of its container and has a fixed height</h3>
+				<p>The description text is at the same height for all featured articles. It makes the 
+					whole thing look organized.</p>
+				<h4 class ="author"> by <u>somename<u></h4>
+			</article>
+			<article class="right">
+				<img src="images/zipper.jpg">
+				<h3>Individual in bunny suit terrorizes small-island residents</h3>
+				<p>"I am sick and tired of finding his eggs wherever I go"</p>
+				<h4 class ="author"> by <u>namename<u></h4>
+
+			</article>
+		</section>
+	</div>
+	<div id = "violator">
+		<p id ="itspersonal">It's Personal</p>
+		<p id="athuffpost">At HuffPost, we report with empathy and put people at the heart of every story. <u>Learn
+		more here</u></p>
+	</div>
+	<footer>
+		<div id="footerlinks">
+			<a href="https://www.huffpost.com"> <img src="images/HuffPostHero.png"></a>
+			<ul>
+				<li>news</li>
+				<li>politics</li>
+				<li>entertainment</li>
+				<li>life</li>
+			</ul>
+			<ul>
+				<li>communities</li>
+				<li>huffpost personal</li>
+				<li>video</li>
+				<li>newsletters	</li>
+			</ul>
+			<ul class="grayfooter">
+				<li>huffpost</li>
+				<li>about us</li>
+				<li>advertise</li>
+				<li>about our ads</li>
+				<li>contact us</li>
+			</ul>
+			<ul class="grayfooter">
+				<li>rss</li>
+				<li>faq</li>
+				<li>careers</li>
+				<li>archive</li>
+				<li>user agreement</li>
+			</ul>
+			<ul class="grayfooter">
+				<li>privacy policy</li>
+				<li>comment policy</li>
+				<li>huffpost press room</li>
+				<li>coupons</li>
+			</ul>
+		</div>
+		<div id="bottomstuff">
+			<img src="images/privacy.png" id="privacy">
+			<img src="images/copyright.png" id ="copyright">
+		</div>
+	</footer>
+	<script>
+		function openNav(){
+			document.getElementById("sidebar").style.width="25%";
+			document.getElementById("sidebarcontent").style.color="white";
+			document.getElementById("closebtn").style.opacity="1";
+
+		}
+		function closeNav(){
+			document.getElementById("sidebar").style.width="0%";
+			document.getElementById("closebtn").style.opacity="0";
+		}
+	</script>
+</body>
+</html>
